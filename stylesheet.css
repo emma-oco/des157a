@@ -1,0 +1,130 @@
+ul {
+	list-style-type:none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6em;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+	display:block;
+}
+
+body{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: montserrat;
+    background-color: #B6E0F7;
+}
+
+#night {
+    background-color: #000C3D;
+}
+
+h1{
+    font-size: 4.2em;
+    color: #000C3D;
+    padding-top: 60px;
+    margin-bottom: 0;
+}
+
+#night h1{
+    color: #DAEFFB;
+}
+
+#night #underm{
+    color: #DAEFFB;
+}
+
+#underm{
+    font-size: 1.7em;
+    margin-top: 0;
+    color: #000C3D;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10%;
+}
+
+article{
+    padding: 2%;
+    background-color: #DAEFFB;
+    border: 2px solid #000C3D;
+    border-radius: 20px;
+    width: 220px;
+}
+
+h2{
+    margin-top: 0%;
+}
+
+#buttonday a{
+    font-size: 1.4em;
+    background-color: #DAEFFB;
+    display: block;
+    text-decoration: none;
+    padding: .3em;
+    border-radius: 45px;
+    border: 2px solid #000C3D;
+    text-align: center;
+    max-width: 240px;
+    text-decoration: none;
+    color: #000C3D;
+}
+
+#buttonnight a{
+    font-size: 1.4em;
+    color: #DAEFFB;
+    background-color: #000C3D;
+    display: block;
+    text-decoration: none;
+    padding: .3em;
+    border-radius: 45px;
+    border: 2px solid #000C3D;
+    text-align: center;
+    max-width: 240px;
+    text-decoration: none;
+}
+
+#sun{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #FFBF1F;
+    animation-name: arc ;
+    animation-duration: 5s;
+    
+}
+
+footer{
+ 
+    padding: 30px;
+    max-width: 100;
+}
+
+#night footer{
+    color: #DAEFFB;
+}
+
+@keyframes arc {
+
+    0% {
+        transform: translate(-100%, 50%) rotate(90deg);
+      }
+      25% {
+        transform: translate(25%, -25%) rotate(135deg);
+      }
+      50% {
+        transform: translate(100%, -50%) rotate(180deg);
+      }
+      75% {
+        transform: translate(75%, -75%) rotate(225deg);
+      }
+      100% {
+        transform: translate(200%, -100%) rotate(270deg);
+      }
+    
+}
