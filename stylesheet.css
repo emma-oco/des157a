@@ -16,6 +16,7 @@ body{
     margin-right: 10%;
     font-family: montserrat;
     background-color: #B6E0F7;
+    position: relative;
 }
 
 #night {
@@ -44,18 +45,48 @@ h1{
 }
 
 main{
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    padding-top: 10%;
+    flex-wrap: wrap;
+    row-gap: 40px;
 }
 
 article{
     padding: 2%;
-    background-color: #DAEFFB;
-    border: 2px solid #000C3D;
-    border-radius: 20px;
-    width: 220px;
+    background-image: url(cloud1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-size: 1em;
+    margin: auto;
+    text-align: center;
+    padding-left: 50px;
+    padding-top: 50px;
 }
+
+#cloud1{
+    width: 400px;
+    height: 130px;
+}
+
+#cloud2{
+    width: 400px;
+    height: 150px;
+}
+
+#cloud3{
+    width: 400px;
+    height: 150px;
+    padding-left: 80px;
+}
+
+#cloud4{
+    width: 400px;
+    height: 150px;
+}
+
+
+
 
 h2{
     margin-top: 0%;
@@ -94,13 +125,25 @@ h2{
     width: 70px;
     border-radius: 50%;
     background-color: #FFBF1F;
-    animation-name: arc ;
-    animation-duration: 5s;
-    
+    animation: arc 10s ease-in-out;
+    animation-fill-mode: forwards;
+    position: absolute;
+    z-index: -1;
+}
+
+#moon{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #cbd7de;
+    animation: arc 10s ease-in-out;
+    animation-fill-mode: forwards;
+    position: absolute;
+    z-index: -1;
 }
 
 footer{
- 
+
     padding: 30px;
     max-width: 100;
 }
@@ -112,19 +155,11 @@ footer{
 @keyframes arc {
 
     0% {
-        transform: translate(-100%, 50%) rotate(90deg);
+        transform: translate(-400%, 80%) rotate(90deg);
       }
-      25% {
-        transform: translate(25%, -25%) rotate(135deg);
-      }
-      50% {
-        transform: translate(100%, -50%) rotate(180deg);
-      }
-      75% {
-        transform: translate(75%, -75%) rotate(225deg);
-      }
+   
       100% {
-        transform: translate(200%, -100%) rotate(270deg);
+        transform: translate(950%,-950%) rotate(270deg);
       }
     
 }
