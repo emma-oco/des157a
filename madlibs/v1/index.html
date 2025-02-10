@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Lib</title>
+     <!-- // -------Normalize Script -------// -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- // ------- Google Fonts -------// -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+     
+     
+     <!-- // -------My Styles -------// -->
+     <link href="stylesheet.css" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <img src="images/waves3.png" alt="waves" id="waves">
+    <div id="madlib">
+    <h1>Beach Mad Lib</h1>
+    <p>Fill in the mad lib below and submit to get your own personal story!</p>
+        <form id="myform">
+            <label for="noun1">Provide a noun: </label>
+            <input type="text"  id="noun1">
+
+            <label for="noun2">Provide a noun: </label>
+            <input type="text"  id="noun2">
+
+            <label for="verb1">Provide a verb: </label>
+            <input type="text"  id="verb1">
+
+            <label for="verb2">Provide a verb: </label>
+            <input type="text"  id="verb2">
+
+            <label for="adjective1">Provide an adjective: </label>
+            <input type="text"  id="adjective1">
+
+<div id="centered">
+            <input type="submit" value="Submit" id="submit">
+</div>
+        </form>
+    </div>
+
+    <section>
+        <h1>Beach Mad Lib</h1>
+        <p>
+            This past  weekend I went to the beach with __noun___, a friend of mine! To say it was a  ___adjective___ experience is an understatement. The weather was so __adjective___ and the waves were  __adjective___. I swear I could hardly believe my __body part plural____. We did a lot of fun activities, but my favorite was __verb ending in ing__. Overall, it was a ___adjective___ day!
+        </p>
+        <button>Close</button>
+    </section>
+</body>
+</html>
