@@ -20,37 +20,37 @@
 </head>
 <body>
     <img src="images/waves3.png" alt="waves" id="waves">
-    <div id="madlib">
-    <h1>Beach Mad Lib</h1>
-    <p>Fill in the mad lib below and submit to get your own personal story!</p>
-        <form id="myform">
-            <label for="noun1">Provide a noun: </label>
-            <input type="text"  id="noun1">
 
-            <label for="noun2">Provide a noun: </label>
-            <input type="text"  id="noun2">
+    <main id="ml">
+        <h1>Beach Mad Lib</h1>
+        <p>Fill in the mad lib below and submit to get your own personal story!</p>
+        <form id="myform">
+            <label for="adjective1">Provide an adjective: </label>
+            <input type="text"  id="adjective1">
+
+            <label for="adjective2">Provide an adjective: </label>
+            <input type="text"  id="adjective2">
 
             <label for="verb1">Provide a verb: </label>
             <input type="text"  id="verb1">
 
-            <label for="verb2">Provide a verb: </label>
-            <input type="text"  id="verb2">
+            <label for="noun1">Provide a noun: </label>
+            <input type="text"  id="noun1">
 
-            <label for="adjective1">Provide an adjective: </label>
-            <input type="text"  id="adjective1">
+            <label for="adjective3">Provide an adjective: </label>
+            <input type="text"  id="adjective3">
 
-<div id="centered">
-            <input type="submit" value="Submit" id="submit">
-</div>
+            <div id="centered">
+                        <button type="submit" value="Submit" id="submit">Submit</button>
+            </div>
         </form>
-    </div>
+    </main>
 
-    <section>
-        <h1>Beach Mad Lib</h1>
-        <p>
-            This past  weekend I went to the beach with __noun___, a friend of mine! To say it was a  ___adjective___ experience is an understatement. The weather was so __adjective___ and the waves were  __adjective___. I swear I could hardly believe my __body part plural____. We did a lot of fun activities, but my favorite was __verb ending in ing__. Overall, it was a ___adjective___ day!
-        </p>
-        <button>Close</button>
+    <div id="error"></div>
+
+    <section id="overlay">
+        <p id="madlib"></p>
+        <button id="close">Close</button>
     </section>
 </body>
 </html>

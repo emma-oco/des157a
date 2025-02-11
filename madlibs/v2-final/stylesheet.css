@@ -16,7 +16,6 @@ form{
     font-weight: 600;
     font-size: 1.1rem;
     margin: auto;
-
 }
 
 p{
@@ -28,7 +27,7 @@ input, label{
     margin-bottom: 15px;
 }
 
-#madlib{
+#ml{
     background:rgba(232, 255, 255, 0.9);
     display: flex;
     flex-wrap: wrap;
@@ -46,7 +45,6 @@ input, label{
     border-width: 3px;
     margin-top: 250px;
     z-index: 1;
-    display: none;
 }
 
 h1{
@@ -88,7 +86,7 @@ h1{
     border-style: solid;
 }
 
-#noun2{
+#adjective3{
     background-color: rgba(232, 255, 255,0);
     border-radius: 3px;
     border-color: #173753;
@@ -102,7 +100,7 @@ h1{
     border-style: solid;
 }
 
-#verb2{
+#adjective2{
     background-color: rgba(232, 255, 255,0);
     border-radius: 3px;
     border-color: #173753;
@@ -116,30 +114,35 @@ h1{
     border-style: solid;
 }
 
-section{
+
+#overlay{
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    max-width: 430px;
-    background-color: rgba(232, 255, 255, 0.9);
-    margin-top: 250px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
+    max-width: 434px;
+    background-color: rgb(232, 255, 255);
+    padding-top: 115px;
+    padding-bottom: 115px;
+    padding-left: 32px;
+    padding-right: 32px;
     border-radius: 25px;
     border-style: solid;
     border-color: #173753;
     border-width: 3px;
     align-items: center;
     justify-content: center;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
-section p{
+#overlay p{
     text-align: left;
 }
 
-button{
+#overlay button{
     color: rgb(232, 255, 255);
     font-weight: 600;
     font-size: 1.5rem;
@@ -151,4 +154,13 @@ button{
     border-radius: 5px;
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+#error{
+    color:#173753;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
 }
