@@ -1,0 +1,36 @@
+body{
+    font-family: montserrat;
+}
+
+#eyeSpy{
+    display: flex;
+    padding-left:40px;
+
+}
+
+section{
+    flex: 25%;
+    min-width: 250px;
+    padding-right: 40px;
+}
+
+main{
+    flex: 75%;
+}
+
+img{
+    width: 75vw;
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+
+}
+
+.overlay{
+    position: absolute;
+    left: 65%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(208, 75, 75);
+    padding-left: 50px;
+}
