@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every Picture</title>
+
+    <!-- // -------Normalize Script -------// -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- // ------- Google Fonts -------// -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- // -------My Styles -------// -->
+    <link href="stylesheet.css" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="eyeSpy">
+        <section>
+            <h1>I spy with my little eye...</h1>
+            <p>Click on items to bring up a description!</p>
+            <div id="item">
+            </div>
+        </section>
+
+        <main>
+            <div id="images">
+                <img src="images/img1.JPG" alt="Eye Spy Image" usemap="#image-map" id="img1">
+                <img src="images/img2.JPG" alt="Eye Spy Image" id="img2">
+            </div>
+
+            <map name="image-map">
+                <area alt="1" title="1" id="1-area" coords="220,391,171,374,187,341,305,302,327,319,325,364,278,361" shape="poly">
+                <area alt="2" title="2" id="2-area"  coords="543,441,552,376,570,354,611,344,685,347,762,354,805,353,879,376,898,389,899,433,890,485,860,504,799,504,702,491,658,490,605,473" shape="poly">
+                <area alt="3" title="3" id="3-area" coords="758,276,763,249,775,226,790,224,836,251,870,274,857,285,830,301,817,310,790,298" shape="poly">
+                <area alt="4" title="4" id="4-area" coords="323,453,314,411,331,381,378,373,429,375,498,376,547,380,536,431,510,470,464,485,425,500,371,489" shape="poly">
+                <area alt="5" title="5" id="5-area" coords="607,335,621,314,627,273,631,247,651,257,667,285,710,320,738,340" shape="poly">
+                <area alt="6" title="6" id="6-area" coords="996,383,981,354,1010,344,1044,358,1055,382,1026,386" shape="poly">
+                <area alt="7" title="7" id="7-area" coords="380,294,350,287,351,269,391,239,421,229,430,242,428,257,413,276,401,288" shape="poly">
+                <area alt="8" title="8" id="8-area" coords="597,297,575,269,563,249,563,222,582,209,612,212,661,226,674,235,680,277,657,251,633,238,615,278,614,297" shape="poly">
+                <area alt="9" title="9" id="9-area" coords="908,438,901,379,1104,418,1123,446,1124,476,1108,490,953,473,908,461" shape="poly">
+            </map>
+        </main>
+    </div>
+
+    <article class="overlay">
+        <h2>This is an overlay</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores vitae quam qui assumenda fugiat sunt.</p>
+    </article>
+
+
+
+</body>
+</html>

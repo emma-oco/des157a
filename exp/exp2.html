@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+</head>
+<body>
+    <h1>Experiment 2</h1>
+    <p></p>
+    <img src="images/face1.png" alt="face">
+
+    <script>
+        var user = prompt("Hi! How are you feeling today on a scale of 1-5 with 1 being the worst and 5 being the best?", "");
+        var text = document.querySelector('p');
+        var img = document.querySelector('img');
+
+
+            img.setAttribute('src',`images/face${user}.png`);
+
+
+    </script>
+    
+</body>
+</html>
