@@ -19,23 +19,35 @@ main{
 }
 
 img{
-    width: 75vw;
-    height: 100vh;
-    object-fit: cover;
-    overflow: hidden;
+    width: 1200px;
+    height: 900px;
 
 }
 
-.overlay{
+/* .overlay{
     position: absolute;
     left: 65%;
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(208, 75, 75);
     padding-left: 50px;
+} */
+
+
+#close{
+    display: none;
 }
 
 #item{
     margin-top: 30px;
 
+}
+
+#images{
+    position: relative;
+}
+
+#img2{
+    position: absolute;
+    z-index: -1;
 }
