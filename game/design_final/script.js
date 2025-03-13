@@ -20,6 +20,15 @@
         gameEnd: 29 
     };
 
+
+    const pass = new Audio('sounds/Pass.m4a');
+    const zero = new Audio('sounds/Zero.m4a');
+    const startSound = new Audio('sounds/Start.m4a');
+    const win = new Audio('sounds/Win.m4a');
+    startGame.addEventListener('mousedown', function () {
+        startSound.play();
+    });
+
     startGame.addEventListener('click', function () {
 
         gameData.index = Math.round(Math.random());
@@ -60,6 +69,7 @@
             game.innerHTML += '<p>snake eyes!</p>';
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             gameData.score[gameData.index] = 0;
+            zero.play();
 
             // show current score
             showCurrentScore ();
@@ -69,7 +79,8 @@
     else if(gameData.roll1 === 1 || gameData.roll2 === 1){
         gameData.index ? (gameData.index = 0) : (gameData.index = 1);
         game.innerHTML += `<p>One of your rolls was a one. Switching to player ${gameData.players[gameData.index]}</p>`;
-        
+        pass.play();
+
         setTimeout(setUpTurn, 2000);
     }
     //If no ones were rolled
@@ -94,6 +105,7 @@
 function checkWinningCondition() {
 	if (gameData.score[gameData.index] > gameData.gameEnd) {
 		score.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h2>`;
+        win.play();
 
 		actionArea.innerHTML = '';
 		document.querySelector('#quit').innerHTML = 'Start a New Game?';

@@ -6,6 +6,7 @@ body {
     background-image: url("images/wizard.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 h2{
@@ -33,9 +34,7 @@ div {
 }
 
 
-#table{
-    position: relative;
-}
+
 
 #game {
     position: absolute;
