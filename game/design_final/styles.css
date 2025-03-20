@@ -33,6 +33,10 @@ div {
     align-items: center;
 }
 
+img {
+    height: 300px;
+    width: auto;
+}
 
 
 
